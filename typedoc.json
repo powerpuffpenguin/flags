@@ -1,0 +1,7 @@
+{
+    "entryPointStrategy": "expand",
+    "entryPoints": [
+        "src/mod.ts",
+    ],
+    "out": "powerpuffpenguin.github.io/ts/flags"
+}
