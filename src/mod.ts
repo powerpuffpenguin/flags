@@ -704,7 +704,7 @@ export class Flags implements Iterable<FlagDefine<any>> {
 }
 export interface FlagOptionsLike<T> {
     /**
-     * flag long name {@link matchUse}
+     * flag long name
      * @remarks
      * The name must match the regular expression /^[a-zA-Z][a-zA-Z0-9\-_\.]*$/u, as you can see some special symbols are not allowed this is intentional, Because I think using strange special symbols as flags names will give users a very bad experience
      */
@@ -738,7 +738,7 @@ export interface FlagOptionsLike<T> {
 }
 export interface FlagOptions<T> {
     /**
-     * flag long name {@link matchUse}
+     * flag long name
      */
     readonly name: string;
     /**

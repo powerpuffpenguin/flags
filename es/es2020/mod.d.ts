@@ -142,7 +142,9 @@ export declare class Flags implements Iterable<FlagDefine<any>> {
 }
 export interface FlagOptionsLike<T> {
     /**
-     * flag long name {@link matchUse}
+     * flag long name
+     * @remarks
+     * The name must match the regular expression /^[a-zA-Z][a-zA-Z0-9\-_\.]*$/u, as you can see some special symbols are not allowed this is intentional, Because I think using strange special symbols as flags names will give users a very bad experience
      */
     readonly name: string;
     /**
@@ -151,6 +153,8 @@ export interface FlagOptionsLike<T> {
     readonly default?: T;
     /**
      * Optional flag short name
+     * @remarks
+     * The short name must match the regular expression /^[a-zA-Z0-9]$/u, as you can see symbols are not allowed this is intentional, Because I think using symbols as flags short names will give users a very bad experience
      */
     readonly short?: string;
     /**
@@ -172,7 +176,7 @@ export interface FlagOptionsLike<T> {
 }
 export interface FlagOptions<T> {
     /**
-     * flag long name {@link matchUse}
+     * flag long name
      */
     readonly name: string;
     /**
@@ -352,6 +356,8 @@ export declare class Parser {
      * Parses command line arguments and invokes a handler callback for a matching command or its subcommands
      * @param args command line parameters
      * @param opts some optional behavior definitions
+     *
+     * @throws {@link FlagsException}
      *
      * @example deno
      * ```

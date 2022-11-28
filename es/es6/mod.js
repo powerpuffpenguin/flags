@@ -956,6 +956,8 @@ export class Parser {
      * @param args command line parameters
      * @param opts some optional behavior definitions
      *
+     * @throws {@link FlagsException}
+     *
      * @example deno
      * ```
      * new Parser(root).parse(Deno.args)
