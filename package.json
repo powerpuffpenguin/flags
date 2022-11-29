@@ -1,7 +1,7 @@
 {
   "name": "@king011/flags",
   "version": "0.0.1",
-  "description": "js library written with ts",
+  "description": "deno and nodeje command args parser",
   "scripts": {
     "deno":"node deno.js",
     "docs": "typedoc --plugin none",

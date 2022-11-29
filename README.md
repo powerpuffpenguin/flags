@@ -18,6 +18,7 @@ Command line argument parser for deno and node.js
   - [Command](#Command)
   - [Verify Flags](#Verify-Flags)
   - [Subcommands](#Subcommands)
+- [Document](https://powerpuffpenguin.github.io/ts/flags/)
 
 # Background
 
